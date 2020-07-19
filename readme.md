@@ -36,10 +36,11 @@ from instabot import InstaBot
 if __name__ == "__main__":
     instaBot = InstaBot('@seuUserName','suaSenha') # Construtor
     instaBot.login() 
-    'Métodos disponíveis: 
-        curtirFotos('nomeHashtag')
-        unfollow() # Remove 10 seguidores a cada 5min
-    '
+    '''
+    Métodos disponíveis: 
+    curtirFotos('nomeHashtag')
+    unfollow() # Remove 10 seguidores a cada 5min
+    '''
     #instaBot.curtirFotos('tiringa')
     instaBot.unfollow()
 
