@@ -52,4 +52,4 @@ my@user:~$ python main.py
 
 ### :email: Contato
 
-[instagram](www.instagram.com/juliomiguel.dev)
+[instagram](https://www.instagram.com/juliomiguel.dev/)
