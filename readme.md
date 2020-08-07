@@ -1,6 +1,6 @@
 # InstaBot: um projeto de web scraping
 
-Este foi meu primeiro projeto (pequeno e simples) de automação/scraping que fiz em 08/2019 (*funcionado em 07/2020*). 
+Este foi meu primeiro projeto (pequeno e simples) de automação/scraping que fiz em 08/2019 (*funcionado em 08/2020*). 
 
 O instaBot surgiu da necessidade de remover seguidores em massa sem intervenção humana. Apesar das limitações que o instagram impoem sobre bots, é possível realizar bastante coisa legal.
 

@@ -46,13 +46,14 @@ class InstaBot:
         #Curtir os posts
         for i in range(len(posts)):
             driver.get(posts_hrefs[i])
-            likedButton = driver.find_element_by_css_selector('svg[aria-label]').get_attribute('aria-label')
-            print(likedButton)
+            sectionButtons = driver.find_element_by_css_selector('section[class="ltpMr Slqrh"]')
+            likeButton = sectionButtons.find_element_by_css_selector('button[class="wpO6b "]')
+            likedButton = likeButton.find_element_by_css_selector('svg[class="_8-yf5 "]').get_attribute('aria-label')
             time.sleep(3)
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             try:
-                if(likedButton != 'Unlike'):
-                    driver.find_element_by_xpath('//button[@class="wpO6b "]').click()
+                if(likedButton not in ('Unlike', 'Descurtir')):
+                    likeButton.click()
                     time.sleep(10)
             except Exception as e:
                 time.sleep(5)
